@@ -16,9 +16,8 @@ app.use(mbaas.fhmiddleware());
 
 
 fh.sync.init('myShoppingList', {}, function() {
-  console.log('Back from synbc init');
+  console.log('Back from sync init');
 });
-
 
 // Important that this is last!
 app.use(mbaas.errorHandler());
