@@ -1,26 +1,26 @@
-var mbaas = require('fh-mbaas-express');
 var express = require('express');
-var fh = require('fh-mbaas-api');
+var mbaasApi = require('fh-mbaas-api');
+var mbaasExpress = mbaasApi.mbaasExpress();
+
+// Define custom sync handlers and interceptors
+require('./lib/sync.js');
 
 // Securable endpoints: list the endpoints which you want to make securable here
-var securableEndpoints = ['hello'];
+var securableEndpoints = [];
 
 var app = express();
 
 // Note: the order which we add middleware to Express here is important!
-app.use('/sys', mbaas.sys(securableEndpoints));
-app.use('/mbaas', mbaas.mbaas);
+app.use('/sys', mbaasExpress.sys(securableEndpoints));
+app.use('/mbaas', mbaasExpress.mbaas);
 
 // Note: important that this is added just before your own Routes
-app.use(mbaas.fhmiddleware());
+app.use(mbaasExpress.fhmiddleware());
 
-
-fh.sync.init('myShoppingList', {}, function() {
-  console.log('Back from sync init');
-});
+// Add extra routes here
 
 // Important that this is last!
-app.use(mbaas.errorHandler());
+app.use(mbaasExpress.errorHandler());
 
 var port = process.env.FH_PORT || process.env.VCAP_APP_PORT || 8001;
 var server = app.listen(port, function(){
