@@ -1,6 +1,6 @@
 {
-  "name": "fh-app",
-  "version": "0.1.0",
+  "name": "sync-cloud",
+  "version": "0.2.0",
   "dependencies": {
     "fh-mbaas-api": "~3.1.0",
     "request": "2.34.0",
