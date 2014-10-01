@@ -33,6 +33,6 @@ require('./lib/sync.js');
 app.use(mbaasExpress.errorHandler());
 
 var port = process.env.FH_PORT || process.env.VCAP_APP_PORT || 8001;
-var server = app.listen(port, function() {
+app.listen(port, function() {
   console.log("App started at: " + new Date() + " on port: " + port);
 });
