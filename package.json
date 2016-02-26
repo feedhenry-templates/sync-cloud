@@ -1,5 +1,5 @@
 {
-  "name": "fh-app",
+  "name": "sync-cloud",
   "version": "0.1.0",
   "dependencies": {
     "fh-mbaas-api": "5.7.12",
