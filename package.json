@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "grunt-contrib-watch": "latest",
-    "grunt-nodemon": "0.2.0",
+    "grunt-nodemon": "0.4.2",
     "grunt-concurrent": "latest",
     "supertest": "0.8.2",
     "should": "2.1.1",
