@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "dependencies": {
     "request": "2.79.0",
-    "fh-mbaas-api": "^6.1.6",
+    "fh-mbaas-api": "~6.1.7",
     "body-parser": "~1.0.2",
     "express": "~4.0.0",
     "cors": "~2.2.0"
