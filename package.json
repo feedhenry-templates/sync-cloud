@@ -12,12 +12,7 @@
     "grunt-contrib-watch": "latest",
     "grunt-nodemon": "0.4.2",
     "grunt-concurrent": "latest",
-    "supertest": "0.8.2",
-    "should": "2.1.1",
-    "turbo-test-runner": "0.3.3",
-    "proxyquire": "0.5.3",
     "grunt-shell": "0.6.4",
-    "istanbul": "0.2.7",
     "grunt-env": "~0.4.1",
     "load-grunt-tasks": "~0.4.0",
     "time-grunt": "~0.3.1",
@@ -26,6 +21,7 @@
   "license": "Apache-2.0",
   "main": "application.js",
   "scripts": {
-    "start": "node application.js"
+    "start": "node application.js",
+    "serve": "grunt serve"
   }
 }
