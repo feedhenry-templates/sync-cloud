@@ -14,19 +14,18 @@ npm install
 ## Setup MongoDB
 
 In order to run the Sync server locally you'll need to have MongoDB running
-on your local machine. By default Sync will try to access MongoDB on port
-`11211`. 
-
-If you are running MongoDB on a different port you should set the
-`FH_MONGODB_CONN_URL` environment variable to the MongoDB connection URL.
+on your local machine. By default Sync will try to access MongoDB using the URL
+`mongodb://localhost:27017/FH_LOCAL`. If you'd like to use a different port or
+database you need to change the `FH_MONGODB_CONN_URL` environment variable in
+the `Gruntfile.js`.
 
 ## Start the server
 
 ```
-grunt serve
+npm run serve
 ```
 
-The Sync server will be availble at `localhost:8001`.
+The Sync server will be availble at `http://localhost:8001`.
 
 If you wish to run the server on a different port you should set the `FH_PORT`
 environment variable to the port you want the server to run on.

@@ -45,7 +45,10 @@ module.exports = function(grunt) {
       options : {},
       // environment variables - see https://github.com/jsoverson/grunt-env for more information
       local: {
-        FH_USE_LOCAL_DB: true
+        FH_USE_LOCAL_DB: true,
+        FH_MONGODB_CONN_URL: 'mongodb://localhost:27017/FH_LOCAL',
+        FH_REDIS_PORT: 6379,
+        FH_REDIS_HOST: '127.0.0.1'
       }
     }
   });
