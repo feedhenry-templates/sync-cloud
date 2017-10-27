@@ -7,7 +7,7 @@
     "cors": "~2.2.0",
     "env-var": "~2.4.3",
     "express": "~4.0.0",
-    "fh-mbaas-api": "~8.0.2",
+    "fh-mbaas-api": "~8.0.3",
     "request": "2.79.0"
   },
   "devDependencies": {
