@@ -3,6 +3,7 @@ group: edge
 sudo: required
 services:
   - mongodb
+  - redis-server
   - docker
 node_js:
   - 4
